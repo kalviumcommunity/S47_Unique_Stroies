@@ -1,0 +1,15 @@
+{
+  "name": "s47_unique_stroies",
+  "version": "1.0.0",
+  "description": "Unique Stroies😊 \r Unique stories is a website where any user can upload their stories. Other users can explore their stroies. They can also like, and share the stories.2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
