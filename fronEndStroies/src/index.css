@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-size: 5vw;
+}
+
+.back{
+    background-color: rgb(154, 85, 0);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 8vh;
+    width: 10vw;
+    border-radius: 20px;
+    font-size: 1.4vw;
+    position: absolute;
+    top: 50vh;
+    left: 45vw;
+    color: black;
+}

@@ -1,0 +1,87 @@
+body{
+    height: 100%;
+    background-image: url("../assets/book.jpg");
+    background-size: cover;
+}
+
+.tag{
+    font-size: 5.5vw;
+    color: rgb(154, 85, 0);
+    position: absolute;
+    top: 10vh;
+    left: 22vw;
+}
+
+.inputBox {
+    height: 40vh;
+    width: 60vw;
+    position: absolute;
+    top: 40vh;
+    left: 22vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+height: 40px;
+padding: 10px;
+margin-bottom: 20px;
+font-size: 16px;
+}
+
+/* Style for the submit button (assuming it's inside the .inputBox) */
+.inputBox button {
+height: 40px;
+padding: 10px 20px;
+background-color: rgb(154, 85, 0);
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+border: none;
+outline: none;
+}
+
+/* Optional: Add a hover effect to the button */
+.inputBox button:hover {
+background-color: #a45b00;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 65vh;
+    left: 40vw;
+}
+
+.loginButton {
+    background-color: rgb(154, 85, 0);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 8vh;
+    width: 10vw;
+    border-radius: 20px;
+    font-size: 1.4vw;
+}
+
+.signupButton {
+    background-color: #fff; /* Adjust the color as needed */
+    color: rgb(154, 85, 0);
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(154, 85, 0);
+    outline: none;
+    height: 8vh;
+    width: 10vw;
+    border-radius: 20px;
+    font-size: 1.4vw;
+}
+
+/* Optional: Add a hover effect to the buttons */
+.loginButton:hover,
+.signupButton:hover {
+opacity: 0.8;
+}
