@@ -79,6 +79,12 @@ try {
         "author": "Basha",
         "PlaceOfOrigin": "Florida",
         
+    },
+    {
+        "StoryNo": "11",
+        "title": "ExampleTitle",
+        "author":"ExampleAuthor",
+        "PlaceOfOrigin":"Example"
     }
     ];
 
