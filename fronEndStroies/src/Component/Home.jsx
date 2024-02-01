@@ -13,6 +13,7 @@ return (
         <div className={styles.buttons}>
             <Link to={"/login"}><button className={styles.loginButton}>Login</button></Link>
             <Link to={"/signup"}><button className={styles.signupButton}>Sign Up</button></Link>
+            <Link><button className={styles.loginButton}>Entity</button></Link>
         </div>
     </div>
 )
