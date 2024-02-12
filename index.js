@@ -28,19 +28,19 @@ app.get('/', (req, res) => {
 
 
 
-// app.post('/addStory', async (req, res) => {
-//     try {
-//         if (!valideter(req.body)) {
-//             res.status(400).json({ error: 'Invalid data' });
-//             return;
-//         }
-//         const newUser = await userModel.create(req.body);
-//         res.json(newUser);
-//     } catch (error) {
-//         console.error('Error adding story:', error);
-//         res.status(500).json({ error: 'Internal Server Error' });
-//     }
-// });
+app.post('/addStory', async (req, res) => {
+    try {
+        if (!valideter(req.body)) {
+            res.status(400).json({ error: 'Invalid data' });
+            return;
+        }
+        const newUser = await userModel.create(req.body);
+        res.json(newUser);
+    } catch (error) {
+        console.error('Error adding story:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
 
 const startServer = () => {
     app.listen(port, () => {
