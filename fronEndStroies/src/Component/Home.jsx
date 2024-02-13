@@ -7,13 +7,17 @@ return (
     <div>
         <h1 className={styles.tag}>Welcome to the Stories</h1>
         <div className={styles.inputBox}>
-            <input type="text" placeholder="Username" className={styles.input} />
-            <input type="password" placeholder="Password" className={styles.input} />
+            <form action="submit">
+                <input type="text" placeholder="Username" className={styles.input} />
+                <input type="password" placeholder="Password" className={styles.input} />
+                <Link to={"/BrowseStories"}><button className={styles.loginButton}>Login</button></Link>
+            </form>
         </div>
         <div className={styles.buttons}>
-            <Link to={"/login"}><button className={styles.loginButton}>Login</button></Link>
-            <Link to={"/signup"}><button className={styles.signupButton}>Sign Up</button></Link>
-            <Link><button className={styles.loginButton}>Entity</button></Link>
+            <Link to={"/BrowseStories"}><button className={styles.signupButton}>Sign Up</button></Link>
+            <Link to={"/AddStory"}><button className={styles.loginButton}>ADD STORY</button></Link>
+            <Link to={"/BrowseStories"}><button className={styles.loginButton}>Browse Stories</button></Link>
+
         </div>
     </div>
 )

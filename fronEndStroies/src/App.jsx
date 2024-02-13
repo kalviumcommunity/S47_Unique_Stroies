@@ -6,28 +6,21 @@ import { Routes, Route} from 'react-router-dom'
 import Home from './Component/Home'
 import Login from './Component/Login'
 import Signup from './Component/SignUp'
-import Firstentity from './Component/Firstentity'
+
+import AddStory from './Component/AddStory'
+import BrowseStories from './Component/BrowseStories'
 
 
 function App() {
-  const OneEntity = [
-    {
-      "StoryNo":"1",
-      "title": "The man at the market",
-      "author": "Leslie Wagner",
-      "PlaceOfOrigin": "Arkansas"
-    }
-  ]
+  
 
   return (
     <>
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
-          <Route path='/login' element={<Login/>}></Route>
-          <Route path='/signup' element={<Signup/>}></Route>
-          <Route path='/entity' element></Route>
+          <Route path='/browseStories' element={<BrowseStories/>}></Route>
+          <Route path = '/AddStory' element={ <AddStory/>}></Route>
         </Routes>
-        <Firstentity entity = {OneEntity}/>
     </>
   )
 }
