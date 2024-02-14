@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 
 export default function BrowseStories() {
     const [users, setUsers] = useState([]);
     const [selectedValue, setSelectedValue] = useState("");
     const [filteredData, setFilteredData] = useState([]);
+    const Navigate = useNavigate();
 
     useEffect(() => {
         fetch("http://localhost:2000/")
@@ -22,12 +25,29 @@ export default function BrowseStories() {
         setFilteredData(newData);
     };
 
+    const handleDelete = async (id) => {
+        try {
+            const response = await axios.delete(`http://localhost:2000/deleteStory/${id}`);
+
+            if (response.status === 200) {
+                const updatedData = filteredData.filter((data) => data._id !== id);
+                setFilteredData(updatedData);
+            } else {
+                console.error('Error deleting story:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error deleting story:', error.message);
+        }
+    };
+
+    
+
     return (
         <div>
             <select onChange={handleSort}>
                 <option value="">Select Author</option>
                 {users.map((data) => (
-                    <option key={data.id} value={data.author}>
+                    <option key={data._id} value={data.author}>
                         {data.author}
                     </option>
                 ))}
@@ -44,11 +64,14 @@ export default function BrowseStories() {
                     </thead>
                     <tbody>
                         {filteredData.map((data) => (
-                            <tr key={data.id}>
+                            <tr key={data._id}>
                                 <td>{data.title}</td>
                                 <td>{data.author}</td>
                                 <td>{data.PlaceOfOrigin}</td>
-                                <td><Link to={"/AddStory"}><button>Edit</button></Link></td>
+                                <td>
+                                    <button onClick={() => Navigate(`/edit/${data._id}`, { state: { story: data } ,})}>Edit</button>
+                                    <button onClick={() => handleDelete(data._id)}>Delete</button>
+                                </td>
                             </tr>
                         ))}
                     </tbody>
