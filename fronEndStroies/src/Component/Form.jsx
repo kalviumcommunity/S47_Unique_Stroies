@@ -11,8 +11,8 @@ const Form = () => {
     const submit = (e) => {
         e.preventDefault();
         console.log(name);
-        document.cookie = `name=${name}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-        document.cookie = `email=${email}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+        document.cookie = `name=${name}; expires=Fri, 12 April 7777 23:59:59 GMT`;
+        document.cookie = `email=${email}; expires=Fri, 12 April 7777 23:59:59 GMT`;
 
         axios.post("http://localhost:3000/createUser",{name,email})
             .then(res => {
@@ -20,6 +20,14 @@ const Form = () => {
                 navigate("/");
             })
             .catch(err => console.error(err));
+
+        axios.post("http://localhost:2000/login")
+            .then(res=>{
+                console.log(res.data)
+                document.cookie=`Token=${res.data};expires=Fri, 12 April 7777 23:59:59 GMT `
+            }).catch(err=>console.log(err))
+
+        
     }
 
     const handelLogOut = () => {
