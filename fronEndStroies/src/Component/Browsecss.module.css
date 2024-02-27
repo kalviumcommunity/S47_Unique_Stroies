@@ -1,0 +1,98 @@
+/* Browsecss.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 217, 171);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .select-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: rgb(154, 85, 0);
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: none;
+    background-color: rgb(154, 85, 0);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(255, 142, 4);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(154, 85, 0);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: rgb(220, 124, 7);
+  }
+  
+  .editButton,
+.deleteButton,
+.backButton {
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.editButton {
+  background-color: rgb(154, 85, 0);
+}
+
+.deleteButton {
+  background-color: rgb(154, 85, 0);
+}
+
+.backButton {
+  background-color: rgb(154, 85, 0);
+}
+
+.editButton:hover,
+.deleteButton:hover,
+.backButton:hover {
+  background-color: rgb(255, 142, 4);
+}

@@ -1,0 +1,44 @@
+/* Updatecss.module.css */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(255, 217, 171);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  button {
+    background-color: rgb(154, 85, 0);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: rgb(154, 85, 0);
+  }
+  
+  

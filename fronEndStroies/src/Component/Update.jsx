@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
+import styles from './Updatecss.module.css';
 
 export default function UpdateStory() {
-    const  {id}  = useParams();
+    const { id } = useParams();
     const [story, setStory] = useState({
         title: '',
         author: '',
-        PlaceOfOrigin: ''
+        PlaceOfOrigin: '',
+        Description: ''
     });
-        
+
     const Navigate = useNavigate();
 
     useEffect(() => {
@@ -18,10 +20,8 @@ export default function UpdateStory() {
 
     const fetchStory = async () => {
         try {
-            const response = await axios.get(`http://localhost:2000/${id}`);
-            console.log(response.data)
+            const response = await axios.get(`https://s47-unique-stroies.onrender.com/${id}`);
             setStory(response.data);
-            console.log(story)
         } catch (error) {
             console.error('Error fetching story:', error.message);
         }
@@ -37,7 +37,7 @@ export default function UpdateStory() {
 
     const handleUpdate = async () => {
         try {
-            const respon = await axios.put(`http://localhost:2000/editStory/${id}`, story);
+            const respon = await axios.put(`https://s47-unique-stroies.onrender.com/editStory/${id}`, story);
 
             if (respon.status === 200) {
                 Navigate('/');
@@ -50,16 +50,19 @@ export default function UpdateStory() {
     };
 
     return (
-        <div>
+        <div className={styles.container}>
             <h1>Update Story</h1>
             <label>Title:</label>
-            <input type="text" name="title" value={story.title} onChange={handleInputChange} /><br />
+            <input type="text" name="title" value={story.title} onChange={handleInputChange} />
 
             <label>Author:</label>
-            <input type="text" name="author" value={story.author} onChange={handleInputChange} /><br />
+            <input type="text" name="author" value={story.author} onChange={handleInputChange} />
 
             <label>Place of Origin:</label>
-            <input type="text" name="PlaceOfOrigin" value={story.PlaceOfOrigin} onChange={handleInputChange} /><br />
+            <input type="text" name="PlaceOfOrigin" value={story.PlaceOfOrigin} onChange={handleInputChange} />
+
+            <label>Description:</label>
+            <input type="text" name="Description" value={story.Description} onChange={handleInputChange} />
 
             <button onClick={handleUpdate}>Update Story</button>
         </div>
