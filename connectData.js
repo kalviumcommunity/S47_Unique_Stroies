@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 let mongoServer;
-const url = 'mongodb+srv://anujsahu:1MBDz4bok7B5Ixug@cluster0.qomzy21.mongodb.net/?retryWrites=true&w=majority'
+const url = 'mongodb+srv://anuj001:Anuj@2004@cluster0.a9f2sip.mongodb.net/?retryWrites=true&w=majority'
 
 const startDatabase = async () => {
   await mongoose.connect(url)

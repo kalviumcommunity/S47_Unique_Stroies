@@ -7,7 +7,7 @@ import Home from './Component/Home'
 import Form from './Component/Form'
 import Signup from './Component/SignUp'
 import Update from "./Component/Update"
-
+import ReadStory from './Component/ReadStory'
 import AddStory from './Component/AddStory'
 import BrowseStories from './Component/BrowseStories'
 
@@ -24,6 +24,7 @@ function App() {
           <Route path = "/signup" element={ <Signup/>}></Route>
           <Route path = "/login" element={ <Form/>}></Route>
           <Route path = "/edit/:id" element={<Update/>}></Route>
+          <Route path = "/read/:id" element={<ReadStory/>}></Route>
         </Routes>
     </>
   )

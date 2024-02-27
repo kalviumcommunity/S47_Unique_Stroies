@@ -71,7 +71,7 @@ export default function BrowseStories() {
                 <td>{data.title}</td>
                 <td>{data.author}</td>
                 <td>{data.PlaceOfOrigin}</td>
-                <td>{data.Description}</td>
+                <td><Link to={`/read/${data._id}`}><button>Read Story</button></Link></td>
                 <td>
                   <button onClick={() => Navigate(`/edit/${data._id}`, { state: { story: data } })} className={styles.editButton}>Edit</button>
                   <button onClick={() => handleDelete(data._id)} className={styles.deleteButton}>Delete</button>
