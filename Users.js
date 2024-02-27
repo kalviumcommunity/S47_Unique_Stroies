@@ -3,7 +3,8 @@ const mongose = require('mongoose')
 const UserSchema = new mongose.Schema({
     title: String,
     author: String,
-    PlaceOfOrigin: String
+    PlaceOfOrigin: String,
+    Description: String
 
 })
 
