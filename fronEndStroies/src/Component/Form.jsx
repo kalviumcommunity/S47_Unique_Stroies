@@ -14,14 +14,14 @@ const Form = () => {
         document.cookie = `name=${name}; expires=Fri, 12 April 7777 23:59:59 GMT`;
         document.cookie = `email=${email}; expires=Fri, 12 April 7777 23:59:59 GMT`;
 
-        axios.post("http://localhost:3000/createUser",{name,email})
+        axios.post("https://s47-unique-stroies.onrender.com/createUser",{name,email})
             .then(res => {
                 console.log(res.data);
                 navigate("/");
             })
             .catch(err => console.error(err));
 
-        axios.post("http://localhost:2000/login")
+        axios.post("https://s47-unique-stroies.onrender.com/login")
             .then(res=>{
                 console.log(res.data)
                 document.cookie=`Token=${res.data};expires=Fri, 12 April 7777 23:59:59 GMT `
