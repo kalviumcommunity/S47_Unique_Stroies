@@ -96,3 +96,8 @@
 .backButton:hover {
   background-color: rgb(255, 142, 4);
 }
+
+.actionCell{
+  display: flex;
+  justify-content: space-between;
+}
