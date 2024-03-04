@@ -55,19 +55,19 @@ function AddStory() {
         <h1>ADD STORY</h1>
         <div>
           <label>Title</label>
-          <input type="text" placeholder="Title" value={title} onChange={handleTittle} required />
+          <input type="text" placeholder="eg: The Golden Time" value={title} onChange={handleTittle} required />
         </div>
         <div>
           <label>Author</label>
-          <input type="text" placeholder="Author" value={author} onChange={handleAuthor} required />
+          <input type="text" placeholder="eg: Anuj" value={author} onChange={handleAuthor} required />
         </div>
         <div>
           <label>Place of Origin</label>
-          <input type="text" placeholder="Place of Origin" value={PlaceOfOrigin} onChange={handlePlaceOfOrigin} required />
+          <input type="text" placeholder="eg: India" value={PlaceOfOrigin} onChange={handlePlaceOfOrigin} required />
         </div>
         <div>
           <label>Describe</label>
-          <textarea placeholder="Describe" value={Description} onChange={handleDescribe} />
+          <textarea placeholder="When I was.." value={Description} onChange={handleDescribe} />
         </div>
         <button type="submit">Add</button>
       </form>
