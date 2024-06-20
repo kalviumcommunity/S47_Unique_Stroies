@@ -1,5 +1,16 @@
 Unique Stroies😊 
-Unique stories is a website where any user can upload their stories. Other users can explore their stroies. They can also like, and share the stories.2
+Unique Stories is a website where any user can upload their stories. Other users can explore their stories. They can also like, and share the stories.2.
+
+
+The motivation behind building this website is to learn the concepts of the backend. I have learned Node.js, Express, and MongoDB in order to develop the website.\
+
+
+#Upcoming Features:
+
+User Login/ SignUp
+
+Other security features allow only the author to delete the entity that is created by the user. Currently, anyone can delete any story.
+
 
 
 [Deployed output link] (https://main--uniquesto.netlify.app/)
