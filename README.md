@@ -54,10 +54,10 @@ With this platform, anyone can create, share, and connect with unique narratives
 ## 📸 **Screenshots**  
 
 ### ✨ **Story Upload Page**  
-![Story Upload Page](images/image1.png)  
+![Story Upload Page](https://drive.google.com/file/d/1Q1uIdbDIKFztbUSIYha12x5Onl3xKF6h/view?usp=sharing)  
 
 ### ✨ **Stories Dashboard**  
-![Stories Dashboard](images/image2.png)  
+![Stories Dashboard](https://drive.google.com/file/d/1ZXdzN_KPfa0PnYPrV7h8br6hhRSWhX9g/view?usp=sharing)  
 
 ---
 
