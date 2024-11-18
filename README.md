@@ -1,35 +1,35 @@
-#🎭**Unique Stories**😊  
+# 🎭 **Unique Stories** 😊  
 > *A storytelling platform that connects hearts through words.*  
 
 🌟 **"Everyone has a story; let yours inspire the world."** 🌟  
 
-##🌐**Live Demo**  
-🚀**[Frontend Deployed Link](https://main--uniquesto.netlify.app/)**  
-> _⚠️ Note: Hosted on a free-tier server; it may take up to** 2 minutes**to load._  
+## 🌐 **Live Demo**  
+🚀 **[Frontend Deployed Link](https://main--uniquesto.netlify.app/)**  
+> _⚠️ Note: Hosted on a free-tier server; it may take up to **2 minutes** to load._  
 
 ---
 
-##🖋️**About the Project**  
+## 🖋️ **About the Project**  
 
-**Unique Stories**is a collaborative platform where users can:  
+**Unique Stories** is a collaborative platform where users can:  
 ✨ **Share** their personal stories.  
 ✨ **Explore** inspiring stories shared by others.  
 ✨ **Engage** with content through likes and shares.  
 
-This project is a**learning milestone** in my **backend development journey**, combining concepts of **Node.js**, **Express.js**, and **MongoDB** to build a fully functional web application.  
+This project is a **learning milestone** in my **backend development journey**, combining concepts of **Node.js**, **Express.js**, and **MongoDB** to build a fully functional web application.  
 
 With this platform, anyone can create, share, and connect with unique narratives from all walks of life.
 
 ---
 
-##📋**Features**  
+## 📋 **Features**  
 
-###🎉**Currently Available**  
+### 🎉 **Currently Available**  
 - 📝 **Upload Stories**: Share your creativity with the world.  
 - 📖 **Explore Stories**: Browse through a collection of unique and inspiring stories.  
 - 👍 **Engagement**: Like and share your favorite stories.  
 
-###🔮Upcoming Features 
+### 🔮 **Upcoming Features**  
 - 🔒 **User Authentication**: Secure login and signup functionality.  
 - 🛡️ **Enhanced Security**:  
   - Only the author will be allowed to delete their stories.  
@@ -40,7 +40,7 @@ With this platform, anyone can create, share, and connect with unique narratives
 
 ---
 
-## 🛠️Tech Stack  
+## 🛠️ **Tech Stack**  
 
 | **Technology**  | **Purpose**                          |
 |------------------|--------------------------------------|
